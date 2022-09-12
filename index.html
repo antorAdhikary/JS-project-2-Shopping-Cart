@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Fixed-nav Font-awesome Bootstrap-css -->
+  <link rel="stylesheet" href="css/navbar-fixed.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="https://kit.fontawesome.com/c409e75686.js" crossorigin="anonymous"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;600&family=Amatic+SC:wght@400;700&family=Babylonica&family=BhuTuka+Expanded+One&family=Cinzel:wght@400;500&family=Gochi+Hand&family=PT+Sans&family=Rajdhani:wght@400;600&family=Roboto+Mono:wght@300;600&family=Roboto:ital,wght@0,100;0,700;1,300&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Sarabun:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fav-icon Title -->
+  <link rel="shortcut icon" href="img/work.png" type="image/x-icon">
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+  <!-- HEADING -->
+  <h2 class="m-5">My Shopping Cart</h2>
+
+  <br><br>
+
+  <section>
+    <div class="container">
+      <div class="bg-light p-5 rounded">
+        <div id="phone-row">
+          <div class="row bg-white p-3 rounded  d-flex align-items-center">
+            <div class="col-md-2">
+              <img class="img-fluid product" src="img/product-1.png" alt="">
+            </div>
+            <div class="col-md-4">
+              <p class="lead font-weight-bold">
+                I-Phone 11 128GB Black
+              </p>
+            </div>
+            <div class="col-md-4 text-right">
+              <button onclick="handlerProductChange('phone', false)"><i class="fa fa-minus"></i></button>
+              <input id="phone-count" class="input-filed mx-1 text-center font-weight-bold bg-light" min="0" value="1" type="number">
+              <button onclick="handlerProductChange('phone', true)" class="mr-3"><i class="fa fa-plus"></i></button>
+              <span id="phone-price" class="product-price">$1000</span>
+            </div>
+            <div class="col-md-2">
+              <img onclick="crossBtn('phone')" class="img-fluid cross" src="img/remove.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <br><br>
+
+        <div id="case-row">
+          <div class="row bg-white p-3 rounded  d-flex align-items-center">
+            <div class="col-md-2">
+              <img class="img-fluid product" src="img/product-2.png" alt="">
+            </div>
+            <div class="col-md-4">
+              <p class="lead font-weight-bold">
+                iPhone 11 Silicone Case - Black
+              </p>
+            </div>
+            <div class="col-md-4 text-right">
+              <button onclick="handlerProductChange('case', false)"><i class="fa fa-minus"></i></button>
+              <input id="case-count" class="input-filed mx-1 pl-2 font-weight-bold bg-light" value="1" min="0" type="number">
+              <button onclick="handlerProductChange('case', true)"><i class="fa fa-plus "></i></button>
+              <span id="case-price" class="product-price ml-3">$50</span>
+            </div>
+            <div class="col-md-2">
+              <img onclick="crossBtn('case')" class="img-fluid cross" src="img/remove.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <br><br>
+        <div class="row bg-white p-3 rounded ">
+          <div class="col-md-10 offset-md-1 d-flex justify-content-between">
+            <h5>Subtotal :</h5>
+            <h4 id="total"></h4>
+          </div>
+          <div class="col-md-10 offset-md-1 d-flex justify-content-between">
+            <h5>Tax :</h5>
+            <h4 id="tax"></h4>
+          </div>
+          <div class="col-md-10 offset-md-1 d-flex justify-content-between">
+            <h5>Total :</h5>
+            <h4 id="grand-total"></h4>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS SCRIPT -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

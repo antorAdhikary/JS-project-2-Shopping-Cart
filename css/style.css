@@ -1,0 +1,27 @@
+.product-row {
+    display: block;
+}
+.product {
+    width: 80%;
+}
+.rounded {
+    border-radius: 10px !important;
+}
+.input-filed{
+    width: 50px;
+}
+.product-price {
+    font-size: 25px;
+    font-weight: 500;
+}
+button {
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    
+}
+.cross {
+    width: 18%;
+    cursor: pointer;
+}
